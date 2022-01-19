@@ -35,6 +35,7 @@ class MemberFactory {
 	}
 }
 
+
 const factory = new MemberFactory()
 
 const members = [
