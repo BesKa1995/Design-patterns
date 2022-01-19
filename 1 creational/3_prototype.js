@@ -13,3 +13,5 @@ const carWithOwner = Object.create(car, {
 })
 
 console.log(carWithOwner)
+
+console.l
