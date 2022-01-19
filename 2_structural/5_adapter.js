@@ -37,5 +37,6 @@ class CalcAdapter {
 const calcAdapter = new CalcAdapter()
 
 console.log(calcAdapter.operations(10, 11, 'add'))
+console.log(calcAdapter.operations(10, 11, 'sub'))
 
 
