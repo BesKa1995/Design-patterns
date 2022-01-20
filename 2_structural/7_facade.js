@@ -11,14 +11,14 @@ class Complaints {
 	}
 }
 
-class ComplaintsService extends Complaints {
+class ServiceComplaints extends Complaints {
 	reply({ id, customer, details }) {
 		return `Service: ${id}: ${customer}: (${details})`
 	}
 }
 
 
-class ComplaintsProduct extends Complaints {
+class ProductComplaints extends Complaints {
 	reply({ id, customer, details }) {
 		return `Product: ${id}: ${customer}: (${details})`
 	}
@@ -27,8 +27,8 @@ class ComplaintsProduct extends Complaints {
 
 class ComplaintsRegistry {
 	static list = {
-		service: ComplaintsService,
-		product: ComplaintsProduct
+		service: ServiceComplaints,
+		product: ProductComplaints
 	}
 
 	register(customer, type, details) {
