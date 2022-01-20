@@ -16,7 +16,10 @@ function aws(server) {
 	return server
 }
 
-
 const s1 = aws(new Server('122.16.188.20', 8080))
 
 console.log(s1.awsInfo())
+
+console.log(aws1(s1))
+
+

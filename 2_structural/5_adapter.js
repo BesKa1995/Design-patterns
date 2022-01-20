@@ -1,10 +1,10 @@
 class OldCalculator {
 	operations(t1, t2, operation) {
 		switch (operation) {
-			case 'add' :
-				return t1 + t2
-			case 'sub' :
-				return t1 - t2
+			//@formatter:off
+			case 'add' : return t1 + t2
+			case 'sub' : return t1 - t2
+			//@formatter:on
 		}
 	}
 }
@@ -26,10 +26,10 @@ class CalcAdapter {
 
 	operations(t1, t2, operation) {
 		switch (operation) {
-			case 'add' :
-				return this.calc.add(t1, t2)
-			case 'sub':
-				return this.calc.sub(t1, t2)
+			//@formatter:off
+			case 'add' : return this.calc.add(t1, t2)
+			case 'sub': return this.calc.sub(t1,t2)
+			//@formatter:on
 		}
 	}
 }
