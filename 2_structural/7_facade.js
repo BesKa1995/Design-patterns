@@ -52,6 +52,8 @@ class ComplaintsRegistry {
 
 const registry = new ComplaintsRegistry()
 
+const s1 = new ComplaintsRegistry()
 console.log(registry.register('Joe', 'service', 'Not   available'))
 console.log(registry.register('Walter', 'product', 'Not working'))
 
+console.log(registry.register('Joe', 'product', 'Not Working'))
