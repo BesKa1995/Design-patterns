@@ -13,19 +13,30 @@ class Complaints {
 
 class ServiceComplaints extends Complaints {
 	reply({ id, customer, details }) {
-		return `Service: ${id}: ${customer}: (${details})`
+		return `
+			ServiceType: ${this.constructor.name}
+			ID:${id}
+			NAME:${customer}
+			DETAILS:(${details}
+`
 	}
 }
 
 
 class ProductComplaints extends Complaints {
 	reply({ id, customer, details }) {
-		return `Product: ${id}: ${customer}: (${details})`
+		return `
+			ServiceType: ${this.constructor.name}
+			ID:${id}
+			NAME:${customer}
+			DETAILS:(${details}
+`
 	}
 }
 
 
 class ComplaintsRegistry {
+
 	static list = {
 		service: ServiceComplaints,
 		product: ProductComplaints
