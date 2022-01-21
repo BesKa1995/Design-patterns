@@ -21,3 +21,4 @@ const proxiedFetch = new Proxy(networkFetch, {
 console.log(proxiedFetch('google.com'))
 console.log(proxiedFetch('google.com'))
 console.log(proxiedFetch('facebook.com'))
+
