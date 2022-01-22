@@ -31,4 +31,4 @@ console.log(x.execute('square'))
 console.log(x.execute('cube'))
 
 
-x.commandExecuted.forEach(command => console.log(x.execute(command)))
+x.commandExecuted.forEach(command => console.log(command))

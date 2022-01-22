@@ -25,9 +25,7 @@ class MyIterator {
 	}
 }
 
-
 const iterator = new MyIterator(['this', 'is', 'iterator'])
-
 for (const iteratorElement of iterator) {
 	console.log(iteratorElement)
 }

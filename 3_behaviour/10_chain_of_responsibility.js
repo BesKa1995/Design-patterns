@@ -16,5 +16,3 @@ const sum1 = new MySum()
 console.log(sum1.add(1).add(2).add(3).sum)
 
 
-
-

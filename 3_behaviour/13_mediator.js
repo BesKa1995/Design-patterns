@@ -46,7 +46,6 @@ const sam = new User('Sam')
 
 const room = new ChatRoom()
 
-
 room.register(jim, will, sam)
 
 
