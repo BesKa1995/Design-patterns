@@ -47,9 +47,7 @@ const sam = new User('Sam')
 const room = new ChatRoom()
 
 
-room.register(jim)
-room.register(will)
-room.register(sam)
+room.register(jim, will, sam)
 
 
 sam.send('Hello', jim)
